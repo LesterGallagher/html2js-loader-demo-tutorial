@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+article {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    article {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        width: 100%;
+    }
+}
