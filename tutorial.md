@@ -1,9 +1,16 @@
+# html2js-loader tutorial
 
-To get started you can use the following instructions
+To get started you can use the following instructions.
 
 ```bash
 npm init
 npm i -D html2js-loader webpack webpack-cli
+```
+
+or clone the tutorial repository.
+
+```bash
+git clone https://github.com/LesterGallagher/html2js-loader-demo-tutorial.git
 ```
 
 When the loader and webpack have finished installing, add the following line to your scripts:
@@ -33,7 +40,14 @@ module.exports = {
         rules: [{
             test: /\.html$/,
             use: {
-                loader: 'html2js-loader'
+                loader: 'html2js-loader',
+                options: {
+                    // defaults:
+
+                    // trimWhitespace: false,
+                    // removeComments: false,
+                    // skipEmptyTextNodes: false
+                }
             }
         }]
     }
